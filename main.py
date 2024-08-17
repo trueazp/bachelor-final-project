@@ -428,12 +428,7 @@ def main():
   <hr style="border: none; background: linear-gradient(45deg, #FF6347, #FFD700); height: 2px; margin: 0 auto;"> <br> <br>
   """
 
-  hide_number_input_addons = """
-  <style>.stNumberInput > div > div > div > div > div {display: none;} </style>
-  """
-
-  # Render the title in the sidebar
-  st.sidebar.markdown(title_html, hide_number_input_addons, unsafe_allow_html=True)
+  st.sidebar.markdown(title_html, unsafe_allow_html=True)
 
   with st.sidebar:
     
