@@ -427,8 +427,13 @@ def main():
   <h1 style="text-align: center; font-family: 'Arial Black', sans-serif; font-size: 32px; background: linear-gradient(45deg, #FF6347, #FFD700); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">Ethereum Stock Analysis & Price Prediction App</h1>
   <hr style="border: none; background: linear-gradient(45deg, #FF6347, #FFD700); height: 2px; margin: 0 auto;"> <br> <br>
   """
+
+  hide_number_input_addons = """
+  <style>.stNumberInput > div > div > div > div > div {display: none;} </style>
+  """
+
   # Render the title in the sidebar
-  st.sidebar.markdown(title_html, unsafe_allow_html=True)
+  st.sidebar.markdown(title_html, hide_number_input_addons, unsafe_allow_html=True)
 
   with st.sidebar:
     
