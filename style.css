@@ -1,0 +1,62 @@
+/* ff5286, #ffd9e5 */
+
+[data-testid=stDecoration] {
+  background: linear-gradient(45, #FF6347, #FFD700);
+  border: #FF6347;
+}
+
+/* ALL ELEMENT BORDER */
+[data-testid=stVerticalBlockBorderWrapper] {
+  box-shadow: 0 0 1px #353535;
+  font-variant: small-caps;
+  font-weight: bolder;
+  padding: 10px;
+}
+
+/* BUTTONS CUSTOMIZATION */
+[data-testid=baseButton-secondary] {
+  max-width: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FF6347; /* Button background color */
+  color: #FFFFFF; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+[data-testid=baseButton-secondary]:hover {
+  background-color: #ff9900;
+  color: #FFFFFF;
+}
+
+/* INPUT FIELD CUSTOMIZATION */
+[data-testid=stNumberInputContainer] {
+  border: 2px solid #FF6347; /* Border color */
+  border-radius: 10px;
+  font-size: 16px; /* Font size */
+  width: 100%; /* Width */
+  transition: border 0.3s ease;
+}
+
+[data-testid=stNumberInputContainer]:hover,
+[data-testid=stNumberInputContainer]:focus {
+  border: 2px solid #ff9900; /* Border color */
+}
+
+/* PROGRESS BAR CUSTOMIZATION */
+/* [class='st-bx st-by st-bz st-c0 st-c1 st-c2 st-c3 st-ag st-c4 st-bv st-bw st-bu st-bt'] {
+  border: 2px solid white;
+  height: 20px;
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+[class='st-bx st-by st-bz st-c0 st-c5 st-c6 st-ah st-ci st-c8'] {
+  background-color: #ff9900 !important;
+} */
